@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- ลิงก์ไปยังไฟล์ CSS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    /* CSS สำหรับ body */
+body {
+    font-family: 'Times New Roman', cursive, sans-serif;
+    background-image: url('bg4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-color: #8169eb; */
+    background-blend-mode: overlay;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS สำหรับ .person */
+.person {
+    background-color: #ffffff;
+    border: 0.5px solid #cccccc;
+    padding: 100px;
+    margin: 100px;
+    display: inline-block;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 200px;
+}
+
+/* CSS สำหรับ .person img */
+.person img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: scale-down;
+    object-position: center;
+    border-radius: 50%;
+}
+
+/* CSS สำหรับ .person h2 */
+.person h2 {
+    color: #333;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* CSS สำหรับ .navbar */
+.navbar {
+    background-color: #e46666;
+    overflow: hidden;
+}
+
+/* CSS สำหรับ .navbar a */
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+/* CSS สำหรับ .navbar a:hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.person .hidden-info {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.person:hover .hidden-info {
+    opacity: 1;
+    color: #333;
+}
+h1
+{
+    color: #0D0D0D;
+    margin: 0px;
+    padding: 40px;
+    position: center;
+}
+</style>
+</head>
+<body>
+    <!-- เมนูนำทางสำหรับหน้า Home -->
+    <div class="navbar">
+        <a href="./home.html">Home</a>
+        <a href="./content.html">Content</a>
+    </div>
+    <h1>GROUP   INFORMATION</h1>
+    <!-- Person 1 -->
+    <div class="person">
+        <img src="milan.jpg" alt="Person 1">
+        <h2>Teeraphong</h2>
+        <h3>6521600494</h3>
+        <!-- ข้อมูลที่จะแสดงเมื่อนำเมาส์ไปชี้ -->
+        <div class="hidden-info">
+            <p>Email: teerapongpayak@gmail.com</p>
+            <p>Phone: 099-128-3264</p>
+        </div>
+    </div>
+
+    <!-- Person 2 -->
+    <div class="person">
+        <img src="A.jpg" alt="Person 2">
+        <h2>Sukrit</h2>
+        <h3>6521604317</h3>
+        <!-- ข้อมูลที่จะแสดงเมื่อนำเมาส์ไปชี้ -->
+        <div class="hidden-info">
+            <p>Email: sukrit.le@ku.th</p>
+            <p>Phone: 099-340-8885</p>
+        </div>
+    </div>
+
+    <!-- Person 3 -->
+    <div class="person">
+        <img src="sewa.jpg" alt="Person 3">
+        <h2>Sewapong</h2>
+        <h3>6521604333</h3>
+        <!-- ข้อมูลที่จะแสดงเมื่อนำเมาส์ไปชี้ -->
+        <div class="hidden-info">
+            <p>Email: sewapong.m@ku.th</p>
+            <p>Phone: 091-839-8075</p>
+        </div>
+    </div>
+</body>
+</html>
